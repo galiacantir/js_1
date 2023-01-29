@@ -1,0 +1,38 @@
+<script>
+    grade = parseInt(prompt("Your grade please: "))
+    
+
+   // LIMIT = 7
+
+    // if (grade >= LIMIT){
+    //     alert("GOOD!")
+    // } else {
+    //     alert("BAD!")
+    // }
+
+    //HW: 
+    // 1...4 - VERY BAD
+    // 5...6 - BAD 
+    // 7-8 - OK
+    // 9 - GOOD, 
+    // 10 - EXCELLENT
+
+    DIAPASON_1 = 4
+    DIAPASON_2 = 6
+    DIAPASON_3 = 8
+    DIAPASON_4 = 9
+    DIAPASON_5 = 10 
+
+    if (grade <= DIAPASON_1){
+        alert("Very bad! :( ")
+    } else if (grade <= DIAPASON_2){
+        alert("Bad!")
+    } else if (grade <= DIAPASON_3){
+        alert("Ok!")
+    } else if (grade <= DIAPASON_4){
+        alert("Good!")
+    } else {
+        alert("Congratulations! Excellent!")
+    }
+
+</script>

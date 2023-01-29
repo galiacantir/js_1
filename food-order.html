@@ -1,0 +1,34 @@
+<script>
+    //in : our ap asks the user for the desired quantity
+    //fact: we know the price for each item
+    //out: total cost
+
+    //data
+    foodName = "Salad" // string
+    foodPriceValue = 15.00 // number
+    foodPriceUnits = "MDL"  // string
+    //HW: 
+    foodDelivery = 10.00
+
+    //alert("We have " + foodName )
+    clientQuality  = prompt(
+        "Menu\n\n" + foodName + " \n\nHow many?"
+    )
+
+    //totalCost = foodPriceValue * clientQuality
+    //alert( 
+    //    "you've ordered " + clientQuality +  
+    //   " \n\nbill " + totalCost + foodPriceUnits
+    //)
+    yourOrder = foodPriceValue * clientQuality
+    totalCost = foodPriceValue * clientQuality + foodDelivery
+
+    alert("you've ordered " + clientQuality + 
+          " \n\nordered price " + yourOrder +
+          " \n\ndelivery " + foodDelivery +
+
+        " \n\ntotal bill " + totalCost + foodPriceUnits  
+        )
+
+
+</script>

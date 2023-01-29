@@ -1,0 +1,24 @@
+<script>
+    //in: student general mark
+    //out: yes/no
+
+    //variable
+    studentMark = +prompt("mark?") 
+    studentBudget = +prompt("money ?")
+
+    //constant
+    APPROVAL_Mark = 7.0
+    CONTRACT_COST = 10000
+
+    //studentBudget >= CONTRACT_COST
+
+    APPROVAL_Mark = studentMark >= APPROVAL_Mark // vedem daca are nota indeajuns de mare
+    approvedMoney = studentBudget >= CONTRACT_COST // vedem daca are suficienti bani sa achite
+
+    //approved = studentMark >= APPROVAL_Mark || studentBudget >= CONTRACT_COST
+    
+    approved = APPROVAL_Mark || approvedMoney 
+    //Expresia finala (este oare primit la invatatura): este nota suficienta  sau are indeajuns buget ca sa achite?
+    alert("is approved? " + approved)
+
+</script>

@@ -1,0 +1,33 @@
+<script>
+    //color = "#377"
+    //size = 300
+
+    color = prompt("Enter color name or code")
+    size = prompt("Enter size in pixels")
+    borderSize = prompt("Enter border size")
+    borderStyle = prompt("Enter border style")
+    borderColor = prompt("Enter border color")
+
+    //!!!STRING
+    // " ... "
+    // ' .... '
+    // ` .... `
+    //interpolare variabile:inlocuirea `+example+` cu ${example}, valabil doar atunci cand se folosesc ``
+
+    document.write(
+        //template
+        `<div style="
+        background: ${color}; 
+        width: ${size}px; 
+        height: ${size}px;
+        border-width: ${borderSize}px;
+        border-style: ${borderStyle};
+        border-color: ${borderColor}"
+    >
+    </div>`
+    )
+
+
+</script>
+
+

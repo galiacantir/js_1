@@ -1,0 +1,55 @@
+<!-- Food Order Dilema -->
+
+<script>
+    //cod linear
+    foodName = "Salad"  // String
+    foodPrice = 15.00  // Number
+    foodAvailQ = 10     // Number
+    foodDelivery = 10.00
+
+    clientQ = parseInt(prompt("Now many " + foodName + " do you want?"))
+    //parseInt: function is used to accept the string and radix parameter and convert it into an integer.
+    
+
+    DELIVERY_AVAILABLE = 100.00
+    //HERE - DECISION?
+
+    if (foodAvailQ >= clientQ) {
+        cost = foodPrice * clientQ
+        alert("Total Cost: " + cost)
+    } else {
+        alert("Sorry, we can offer only: " + foodAvailQ )
+    }
+
+    // HW1: 
+    // 1. add availability (if/else)???? n-am inteles care este  exercitiu precedent
+    
+
+    // 2. add free delivery (if/else) 
+    // FREE DELIVERY 
+
+    if ( cost >= DELIVERY_AVAILABLE ){
+        alert ("You have free delivery :) ")
+    } else {
+        alert ("Sorry, you must pay for your delivery:" + foodDelivery +" MDL")
+    }
+
+    //FLOW CONTROL - gestionarea cu fluxul de executie
+    //Types of control constructions: 
+    // 1. Branching 
+    // 2. Looping
+
+    // BRANCHING in JS
+
+    if (expression) 
+    {
+    take_road_a
+    }
+    else {
+        take_road_b
+    }
+
+    // {} - parantezele figurate sunt un bloc de cod, tot ce este intre paranteze este ca o grupa de instructiuni
+
+
+</script>
