@@ -1,0 +1,22 @@
+
+<script>
+    // IN: our script reads the battery status data in %
+    // FACT: the factory settings idicate how long does a % left
+    // OUT: calculate how many minutes our device has left
+
+    // variables - camelCase
+
+    baterryCharge = +prompt("baterry?")        // % --- variable
+
+    FULL_BATTERY = 100          // 100%  - fully charged battery
+    chargePercentInMinutes = 10 // 1% - 10 minutes
+    
+    etWorkInMinutes  =  baterryCharge * chargePercentInMinutes
+    etWorkinHours = (baterryCharge * chargePercentInMinutes)/60
+    alert("Remaining time (minutes): " + etWorkInMinutes )
+    alert("Remaining time (hours): " + etWorkinHours )
+
+//Functii de afisare: 
+//alert()
+//HW: calculate it in hours
+</script>
