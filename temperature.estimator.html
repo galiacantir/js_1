@@ -1,0 +1,18 @@
+<script>
+    // IN: meteo data 
+    // OUT: document -> img
+
+    temperatureC = 2
+
+    LIMIT = 18 
+
+    if (temperatureC>=LIMIT) {
+        //alert("WARM")
+        document.write("WARM")
+        document.write("<br><img src='https://icons.iconarchive.com/icons/dapino/summer-holiday/256/sun-icon.png'>")
+    } else {
+        //alert("COLD")
+        document.write("COLD")
+        document.write("<br><img src='https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/snow-flake-icon.png'>")
+    }
+</script>
