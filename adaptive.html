@@ -1,0 +1,37 @@
+<script>
+    // IN data
+    //const BREAK_POINT = 1100
+    const SMALL = 560
+    const MEDIUM = 980
+    const LARGE = 1200
+
+    const MIN_SIZE = 60
+    const MAX_SIZE = 3000
+    
+    //let windowWidth = +prompt("Window size?")
+    let windowWidth = innerWidth // innerHeight
+    // innerWidth - returns the interior width of the window in pixels
+
+
+    //HW: 1. add breakpoints: + conditia: nu poate exista ecran size<60  - error, size>3000 - error
+    //           560           980            1200
+    //------------x-------------x---------------x------------>
+    // extra small    small         medium         large
+
+
+    if(windowWidth <= MIN_SIZE){
+        alert("!!! Error: the size cannot be smaller 60 pixels")
+    }
+    else if (windowWidth <= SMALL){
+        alert("Extra small: " + windowWidth)
+    } else if(windowWidth <= MEDIUM){
+        alert("Small: " + windowWidth)
+    } else if (windowWidth <= LARGE){
+        alert("Medium: " + windowWidth)
+    } else if(windowWidth <= MAX_SIZE){
+        alert("Large: " + windowWidth)
+    } else {
+        alert("!!! ERROR: the size cannot be larger 3000 pixels")
+    }
+
+</script>
