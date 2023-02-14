@@ -1,0 +1,57 @@
+<script>
+    // switch - este o constructie care permite sa creezi mai multe drumuri 
+    // branching, care poate sa se comuteze dintr-o ramura de executie in alta in dependenta de o anumita conditie 
+
+    // Formula:
+    // switch(expression){ // operator: === identic
+    //     case value_1:
+    //          code_1
+    //     break
+    //     case value_2:
+    //          code_2
+    //     break
+    //     //....
+    //     case value_N:
+    //          code_N
+    //     break
+    //     default:
+    //         code_default
+    //     break
+    // }
+
+    // Exemple: Choose the day
+    let day = parseInt(prompt("Day of the week?")) // 1 ... 7
+    
+    // HW1: using if/else + prompt() : what calendar?
+    // Care este termenul care defineste tipul de calendar/prima zi a saptamanii?
+    let week = prompt("What calendar?")
+
+    if(week){
+    
+    } else{
+
+    }
+    
+    switch (day){
+        case 1: document.write("Mo"); break
+        case 2: document.write("Tu"); break
+        case 3: document.write("Wd"); break
+        case 4: document.write("Th"); break
+        case 5: 
+            let times = 3
+            while(times > 0 ){
+                document.write("Yeeeey!!! :) ")
+                times--
+            }
+            document.write("Fr"); break
+
+            //HW: rewrite example while -> for 
+            //for( let times = 3; times > 0; times --){
+            //   document.write("Yeeeey!!! :) ")
+            //}
+        case 6: document.write("Sa"); break
+        case 7: document.write("Su"); break
+
+        default: document.write("Are you drunk? :D "); break
+    }
+</script>
