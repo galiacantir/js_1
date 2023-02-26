@@ -29,11 +29,12 @@
 
     let day = parseInt(prompt("Day of the week?")) // 1 ... 7
     
-    if(week == SUNDAY_FIRST)
+    if(week == SUNDAY_FIRST){
         //alert("Sunday is the first day of the week")
         day--
         if(day == 0)
         day = 7
+    }
     // } else{
     //     alert("Monday is the first day of the week")
     // }
