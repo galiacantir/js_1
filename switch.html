@@ -23,17 +23,22 @@
     
     // HW1: using if/else + prompt() : what calendar?
     // Solutii in prompt: 1. sunday is first day, 2. monday is first day
-    let week = parseInt(prompt("What calendar?"))
-    SUNDAY_FIRST = "week_1"
-    MONDAY_FIRST = "week_2"
-
-    if(week = SUNDAY_FIRST){
-        alert("Sunday is the first day of the week")
-    } else{
-        alert("Monday is the first day of the week")
-    }
+    let week = parseInt(prompt("1. sunday is first day\n2. monday is first day\nWhat calendar?"))
+    SUNDAY_FIRST = 1 // sunday first
+    MONDAY_FIRST = 2 // monday first
 
     let day = parseInt(prompt("Day of the week?")) // 1 ... 7
+    
+    if(week == SUNDAY_FIRST)
+        //alert("Sunday is the first day of the week")
+        day--
+        if(day == 0)
+        day = 7
+    // } else{
+    //     alert("Monday is the first day of the week")
+    // }
+
+    
     
     switch (day){
         case 1: document.write("Mo"); break
