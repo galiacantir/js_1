@@ -1,0 +1,52 @@
+<script>
+    // DATA 
+    const PIN = "1234" // why not number?
+
+    let pin = ""
+    let tries = 0
+    let balance = 1000000.00
+
+    MAX_AMMOUNT = 50000.00
+
+    while(true){
+
+        pin = prompt("Enter PIN:")
+        tries++
+
+        if (pin == PIN){
+
+             // /////////////////////
+            alert("Access Granted!!!")
+            alert(`Atention!!!\nMaximum daily cash withdraw: ${MAX_AMMOUNT}`)
+            
+            let money = +prompt("WITHDRAW: ?")
+
+            balance -= money // balance = balance - money
+            
+            // HW2: max money = 50000
+            // if(money>=MAX_AMMOUNT){
+            //     alert(`Maximum daily cash withdraw: ${MAX_AMMOUNT}`)
+            // } 
+
+            // HW1: upgrade - check balance
+            if(money <= balance){
+                alert(`Success!\n\nYou have enough money!\n\nYour balance: ${balance}MDL`)
+            } else {
+                alert("You don't have money!!! )")
+            }
+            
+
+            // /////////////////////
+
+            break
+        } else {
+            alert("Wrong PIN!!!")
+            if(tries == 3){
+                alert("CARD BLOCKED!!!")
+                break // forse while stop
+            }
+        }
+
+    }
+    
+</script>

@@ -1,0 +1,43 @@
+<body style="font-family: monospace; line-height: 11px;">
+    
+
+<script>
+    // the map of a room 10 * 10 m
+    //rx, ry  = coord of vacuum cleaner robot
+    
+    let rx = 5
+    let ry = 7
+
+    let sx = 10
+    let sy = 10
+    //########## line x 10 ##########
+    for (let y = 1; y<=10; y++){
+
+        //########## dots x 10 ##########
+        for (let x=1; x<=10; x++){
+
+            // if(x == rx && y == ry){ // daca x coincide cu rx si in acelasi timp y coincide cu ry
+            //     document.write(` R `)
+
+            // }else {
+            //     document.write(` . `)
+            // }
+
+            if(x == rx && y == ry){
+                document.write(` R `)
+            } else  if(x == sx && y == sy){
+                document.write(` S `)
+            } else {
+                document.write(` . `)
+             }
+        }
+        document.write(`<br>`)
+
+        //########## dots x 10 ##########
+
+    }
+    //########## line x 10 ##########
+    // HW: we have 2 more coords: sx, sy - station
+    //     print "S"
+</script>
+</body>
