@@ -25,6 +25,10 @@ function action(){ // functia intercepteaza apasarea unei taste
     if(pac_x == coin_x & pac_y == coin_y){
         score += 10 // += - adauga la scor 10 unitati
     }
+
+    if(pac_x == bomb_x & pac_y == bomb_y){
+        health_points -=20
+    }
     renderMap() //  - functia redeseneaza harta
 }
 
