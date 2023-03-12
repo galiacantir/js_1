@@ -9,7 +9,7 @@ let bomb_x = 8
 let bomb_y = 2
 
 let score= 0
-let health_points = 0
+let health_points = 100
 
 function action(){ // functia intercepteaza apasarea unei taste
     console.log(
