@@ -29,12 +29,17 @@
             // } 
 
             // HW1: upgrade - check balance
-            if(money <= balance){
-                alert(`Success!\n\nYou have enough money!\n\nYour balance: ${balance}MDL`)
-            } else {
-                alert("You don't have money!!! )")
-            }
+            // if(money <= balance){
+            //     alert(`Success!\n\nYou have enough money!\n\nYour balance: ${balance}MDL`)
+            // } else {
+            //     alert("You don't have money!!! )")
+            // }
             
+            if(money <= MAX_AMMOUNT && money<=balance){
+                alert(`Success!\n\nYou have enough money!\n\nYour balance: ${balance}MDL`)
+            } else{
+                alert("You don't have money or daily amount is too high")
+            }
 
             // /////////////////////
 

@@ -1,0 +1,36 @@
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.gamemap{
+    width: 500px;
+    height: 500px;
+    border: 10px solid #666;
+    
+}
+
+.gamemap div{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #555;
+
+    float: left;
+}
+
+.gamemap .pac{
+    background-image: url(img/Pacman-icon.png);
+    background-size: contain;
+}
+
+.gamemap .coin{
+    background-image: url(img/Coin-icon.png);
+    background-size: contain;
+}
+
+.gamemap .bomb{
+    background-image: url(img/12158-bomb-icon.png);
+    background-size: contain;
+}
+
+
